@@ -9,9 +9,9 @@ function App() {
     return (
         <div className="contentPage">
             <Router>
-                <Route path="/" exact component={HomePage}></Route>
-                <Route path="/contact" exact component={ContactPage}></Route>
-                <Route path="/privacity" exact component={PrivacityPage}></Route>
+                <Route path="/widgets" exact component={HomePage}></Route>
+                {/* <Route path="/contact" exact component={ContactPage}></Route>
+                <Route path="/privacity" exact component={PrivacityPage}></Route> */}
             </Router>
         </div>
     )
