@@ -1,0 +1,112 @@
+$color-gris-fuente: rgb(150, 150, 150)
+$color-negro-fuente: #000
+$color-oro: rgb(252, 200, 97)
+$color-plata: rgb(229, 229, 229)
+$color-bronce: rgb(220, 179, 134)
+
+
+.medallero-container
+    .medallero-header
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 0.5rem
+        column-gap: 0.5rem
+        color: $color-gris-fuente
+        font-size: 1.5rem
+        line-height: 2.2rem
+
+        .medallero-header-equipo
+            display: flex
+            justify-content: center
+        .medallero-header-medallas
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+        .medallero-header-total
+            display: flex
+            justify-content: center
+
+    .line
+        background: rgb(221, 221, 221)
+        grid-column: 1 / -1
+        height: 1px
+        justify-self: stretch
+    .medallero-body
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        //row-gap: 3.6rem
+        //grid-template: auto / [flag] 10rem [country] auto [medals] repeat(5, 8rem)
+        column-gap: 0.5rem
+        //place-items: center
+        color: $color-gris-fuente
+        font-size: 1.5rem
+        line-height: 2.2rem
+        margin-top: 20px
+        margin-bottom: 20px
+        .medallero-body-equipo
+            display: flex
+            .medallero-body-equipo-img 
+                width: 40px
+                height: 30px
+            .medallero-body-equipo-name
+                color: $color-negro-fuente
+                font-weight: 600
+                padding-left: 20px
+        .medallero-body-medallas
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            .oro
+                align-items: center
+                background-color: $color-oro
+                border-radius: 100%
+                display: flex
+                justify-content: center
+                font-size: 1.8rem
+                line-height: 2.8rem
+                height: 40px
+                width: 40px
+                font-size: 1.6rem
+                color: $color-negro-fuente
+            .silver
+                align-items: center
+                background-color: $color-plata
+                border-radius: 100%
+                display: flex
+                justify-content: center
+                font-size: 1.8rem
+                line-height: 2.8rem
+                height: 40px
+                width: 40px
+                font-size: 1.6rem
+                color: $color-negro-fuente
+                margin-left: 15px
+        
+            .bronce
+                align-items: center
+                background-color: $color-bronce
+                border-radius: 100%
+                display: flex
+                justify-content: center
+                font-size: 1.8rem
+                line-height: 2.8rem
+                height: 40px
+                width: 40px
+                font-size: 1.6rem
+                color: $color-negro-fuente
+                margin-left: 15px
+            .medallero-body-medallas-vacia
+                align-items: center
+                background-color: #fff
+                border-radius: 100%
+                display: flex
+                justify-content: center
+                font-size: 1.8rem
+                line-height: 2.8rem
+                height: 40px
+                width: 40px
+                font-size: 1.6rem
+                color: $color-negro-fuente
+                margin-left: 15px
+        .medallero-body-total
+            color: $color-negro-fuente
+            display: flex
+            justify-content: center
